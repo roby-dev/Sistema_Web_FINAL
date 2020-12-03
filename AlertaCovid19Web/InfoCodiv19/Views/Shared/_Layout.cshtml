@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+
+        footer {
+            background: #16222A;
+            background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+            background: linear-gradient(59deg, #3A6073, #16222A);
+            color: white;
+            margin-top: 80px;
+        }
+
+            footer a {
+                color: #fff;
+                font-size: 14px;
+                transition-duration: 0.2s;
+            }
+
+                footer a:hover {
+                    color: #FA944B;
+                    text-decoration: none;
+                }
+
+        .copy {
+            font-size: 12px;
+            padding: 10px;
+            border-top: 1px solid #FFFFFF;
+        }
+
+        .footer-middle {
+            padding-top: 2em;
+            color: white;
+        }
+
+
+        /*SOCİAL İCONS*/
+
+        /* footer social icons */
+
+        ul.social-network {
+            list-style: none;
+            display: inline;
+            margin-left: 0 !important;
+            padding: 0;
+        }
+
+            ul.social-network li {
+                display: inline;
+                margin: 0 5px;
+            }
+
+
+        /* footer social icons */
+
+        .social-network a.icoFacebook:hover {
+            background-color: #3B5998;
+        }
+
+        .social-network a.icoLinkedin:hover {
+            background-color: #007bb7;
+        }
+
+            .social-network a.icoFacebook:hover i,
+            .social-network a.icoLinkedin:hover i {
+                color: #fff;
+            }
+
+        .social-network a.socialIcon:hover,
+        .socialHoverClass {
+            color: #44BCDD;
+        }
+
+        .social-circle li a {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto 0 auto;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+        }
+
+        .social-circle li i {
+            margin: 0;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .social-circle li a:hover i,
+        .triggeredHover {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms--transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: all 0.2s;
+            -moz-transition: all 0.2s;
+            -o-transition: all 0.2s;
+            -ms-transition: all 0.2s;
+            transition: all 0.2s;
+        }
+
+        .social-circle i {
+            color: #595959;
+            -webkit-transition: all 0.8s;
+            -moz-transition: all 0.8s;
+            -o-transition: all 0.8s;
+            -ms-transition: all 0.8s;
+            transition: all 0.8s;
+        }
+
+        .social-network a {
+            background-color: #F9F9F9;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+
+        <img src="~/Content/vendors/images/logofondo.png" width="50" alt="Alternate Text" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+               
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-right:10px " href="~/Inicio/Index">Inicio</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-right:10px " href="~/Inicio/Noticias">Noticias</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-right:10px " href="~/Inicio/Sintomas">Sintomas</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-right:10px " href="~/Inicio/ReportarCaso">Reporte</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-right:10px" href="~/Inicio/Donar">Donaciones</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong> <a class="nav-link" style="color:white;margin-left:5px" href="~/Inicio/Autodiagnostico">Autodiagnostio</a></strong>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div>
+        @RenderBody()
+
+    </div>
+
+
+
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+
+                        <div ">
+
+
+                            <lottie-player src="https://assets9.lottiefiles.com/private_files/lf30_4avuVV.json" background="transparent" speed="1" style="width: 250px; height: 250px;margin-right:5%;margin-top:-10%; " autoplay loop></lottie-player>
+
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+
+                        <div class="footer-pad">
+                            <br />
+                            <h4>Heading 2</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Website Tutorial</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <br />
+                        <div class="footer-pad">
+                            <h4>Heading 3</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Parks and Recreation</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <br />
+                        <h4>Follow Us</h4>
+                        <ul class="social-network social-circle">
+                            <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 copy">
+                        <p class="text-center">&copy; Copyright 2020 - Web 2.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+@*<script src="~/Scripts/jquery-3.5.1.js"></script>*@
+<script src="~/Scripts/js/lottie-player.js"></script>
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>*@

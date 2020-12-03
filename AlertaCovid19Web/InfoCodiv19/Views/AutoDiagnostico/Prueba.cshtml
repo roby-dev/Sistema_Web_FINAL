@@ -1,0 +1,1876 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Prueba</title>
+</head>
+
+<style>
+    body {
+        line-height: 1
+    }
+
+    a {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent
+    }
+
+    abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent
+    }
+
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0
+    }
+
+    abbr[title], dfn[title] {
+        border-bottom: 1px dotted;
+        cursor: help
+    }
+
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+        display: block
+    }
+
+    ins {
+        background-color: #ff9;
+        color: #000;
+        text-decoration: none
+    }
+
+    blockquote, q {
+        quotes: none
+    }
+
+    nav ul {
+        list-style: none
+    }
+
+    table {
+        border-collapse: collapse;
+        border-spacing: 0
+    }
+
+    del {
+        text-decoration: line-through
+    }
+
+    blockquote:after, blockquote:before, q:after, q:before {
+        content: '';
+        content: none
+    }
+
+    mark {
+        background-color: #ff9;
+        color: #000;
+        font-style: italic;
+        font-weight: bold
+    }
+
+    input, select {
+        vertical-align: middle
+    }
+
+    .iconm-loader:before {
+        content: '\e900'
+    }
+
+    .iconm-arrowLeft:before {
+        content: '\e901'
+    }
+
+    .iconm-arrowDown:before {
+        content: '\e902'
+    }
+
+    .iconm-arrowX:before {
+        content: '\e903'
+    }
+
+    .iconm-arrowY:before {
+        content: '\e904'
+    }
+
+    .iconm-plus:before {
+        content: '\e905'
+    }
+
+    .iconm-less:before {
+        content: '\e906'
+    }
+
+    .iconm-doc:before {
+        content: '\e907'
+    }
+
+    .iconm-internet:before {
+        content: '\e908'
+    }
+
+    .iconm-adults:before {
+        content: '\e909'
+    }
+
+    .iconm-pet:before {
+        content: '\e910'
+    }
+
+    .iconm-excersise:before {
+        content: '\e911'
+    }
+
+    .iconm-house:before {
+        content: '\e912'
+    }
+
+    .iconm-health-mind:before {
+        content: '\e913'
+    }
+
+    .iconm-virus:before {
+        content: '\e914'
+    }
+
+    .iconm-out:before {
+        content: '\e915'
+    }
+
+    .iconm-pickup-car:before {
+        content: '\e916'
+    }
+
+    .iconm-water:before {
+        content: '\e917'
+    }
+
+    .iconm-mask:before {
+        content: '\e918'
+    }
+
+    .iconm-city:before {
+        content: '\e919'
+    }
+
+    .iconm-desk-file:before {
+        content: '\e920'
+    }
+
+    .iconm-laptop-file:before {
+        content: '\e921'
+    }
+
+    .iconm-article:before {
+        content: '\e922'
+    }
+
+    .iconm-copywriting:before {
+        content: '\e923'
+    }
+
+    .iconm-adulto-mayor:before {
+        content: '\e924'
+    }
+
+    .iconm-aeropuerto:before {
+        content: '\e925'
+    }
+
+    .iconm-agricultura:before {
+        content: '\e926'
+    }
+
+    .iconm-aislamiento-preventivo:before {
+        content: '\e927'
+    }
+
+    .iconm-ayuda-social:before {
+        content: '\e928'
+    }
+
+    .iconm-banca:before {
+        content: '\e929'
+    }
+
+    .iconm-cancilleria:before {
+        content: '\e930'
+    }
+
+    .iconm-ciencia:before {
+        content: '\e931'
+    }
+
+    .iconm-cultura:before {
+        content: '\e932'
+    }
+
+    .iconm-deporte:before {
+        content: '\e933'
+    }
+
+    .iconm-economia:before {
+        content: '\e934'
+    }
+
+    .iconm-educacion:before {
+        content: '\e935'
+    }
+
+    .iconm-empleo:before {
+        content: '\e936'
+    }
+
+    .iconm-fiscalia:before {
+        content: '\e937'
+    }
+
+    .iconm-fronteras:before {
+        content: '\e938'
+    }
+
+    .iconm-fuerzas-militares:before {
+        content: '\e939'
+    }
+
+    .iconm-justicia:before {
+        content: '\e940'
+    }
+
+    .iconm-migrantes:before {
+        content: '\e941'
+    }
+
+    .iconm-ninez:before {
+        content: '\e942'
+    }
+
+    .iconm-precio-gasolina:before {
+        content: '\e943'
+    }
+
+    .iconm-pymes:before {
+        content: '\e944'
+    }
+
+    .iconm-salud:before {
+        content: '\e945'
+    }
+
+    .iconm-servicios-publicos:before {
+        content: '\e946'
+    }
+
+    .iconm-telecomunicaciones:before {
+        content: '\e947'
+    }
+
+    .iconm-transporte:before {
+        content: '\e948'
+    }
+
+    .iconm-turismo:before {
+        content: '\e949'
+    }
+
+    .iconm-vivienda:before {
+        content: '\e950'
+    }
+
+    .iconm-ambiente-dashboard:before {
+        content: '\e951'
+    }
+
+    .iconm-ayudasocial-dashboard:before {
+        content: '\e952'
+    }
+
+    .iconm-comportamiento-dashboard:before {
+        content: '\e953'
+    }
+
+    .iconm-mapa-coronapp-dashboard:before {
+        content: '\e954'
+    }
+
+    .iconm-transporte-dashboard:before {
+        content: '\e955'
+    }
+
+    .iconm-vulnerabilidad-dashboard:before {
+        content: '\e956'
+    }
+
+    .iconm-uci-dashboard:before {
+        content: '\e957'
+    }
+
+    .iconm-reactivacion-economica-dashboard:before {
+        content: '\e958'
+    }
+
+    .iconm-sigc-mounstrou:before {
+        content: '\e959'
+    }
+
+    .iconm-informacion-general-covid-19:before {
+        content: '\e960'
+    }
+
+    .iconm-play-button:before {
+        content: '\e961'
+    }
+
+    .iconm-aislamiento-selectivo:before {
+        content: '\e962'
+    }
+
+
+    .iconm-protocol-c7-1:before {
+        content: '\e902'
+    }
+
+    .iconm-protocol-c7-2:before {
+        content: '\e903'
+    }
+
+    .iconm-protocol-c7-3:before {
+        content: '\e904'
+    }
+
+    .iconm-protocol-c7-4:before {
+        content: '\e905'
+    }
+
+    .iconm-protocol-c7-5:before {
+        content: '\e906'
+    }
+
+    .iconm-protocol-c6-1:before {
+        content: '\e907'
+    }
+
+    .iconm-protocol-c6-2:before {
+        content: '\e908'
+    }
+
+    .iconm-protocol-c6-3:before {
+        content: '\e909'
+    }
+
+    .iconm-protocol-c6-4:before {
+        content: '\e90a'
+    }
+
+    .iconm-protocol-c6-5:before {
+        content: '\e90b'
+    }
+
+    .iconm-protocol-c6-6:before {
+        content: '\e90c'
+    }
+
+    .iconm-protocol-c6-7:before {
+        content: '\e90d'
+    }
+
+    .iconm-protocol-c6-8:before {
+        content: '\e90e'
+    }
+
+    .iconm-protocol-c6-9:before {
+        content: '\e90f'
+    }
+
+    .iconm-protocol-c5-1:before {
+        content: '\e910'
+    }
+
+    .iconm-protocol-c5-2:before {
+        content: '\e911'
+    }
+
+    .iconm-protocol-c5-3:before {
+        content: '\e912'
+    }
+
+    .iconm-protocol-c5-4:before {
+        content: '\e913'
+    }
+
+    .iconm-protocol-c5-5:before {
+        content: '\e914'
+    }
+
+    .iconm-protocol-c5-6:before {
+        content: '\e915'
+    }
+
+    .iconm-protocol-c4-1:before {
+        content: '\e916'
+    }
+
+    .iconm-protocol-c4-2:before {
+        content: '\e917'
+    }
+
+    .iconm-protocol-c4-3:before {
+        content: '\e918'
+    }
+
+    .iconm-protocol-c4-4:before {
+        content: '\e919'
+    }
+
+    .iconm-protocol-c4-5:before {
+        content: '\e91a'
+    }
+
+    .iconm-protocol-c4-6:before {
+        content: '\e91b'
+    }
+
+    .iconm-protocol-c4-7:before {
+        content: '\e91c'
+    }
+
+    .iconm-protocol-c4-8:before {
+        content: '\e91d'
+    }
+
+    .iconm-protocol-c3-1:before {
+        content: '\e91e'
+    }
+
+    .iconm-protocol-c3-2:before {
+        content: '\e91f'
+    }
+
+    .iconm-protocol-c3-3:before {
+        content: '\e920'
+    }
+
+    .iconm-protocol-c3-4:before {
+        content: '\e921'
+    }
+
+    .iconm-protocol-c3-5:before {
+        content: '\e922'
+    }
+
+    .iconm-protocol-c3-6:before {
+        content: '\e923'
+    }
+
+    .iconm-protocol-c3-7:before {
+        content: '\e924'
+    }
+
+    .iconm-protocol-c3-8:before {
+        content: '\e925'
+    }
+
+    .iconm-protocol-c3-9:before {
+        content: '\e926'
+    }
+
+    .iconm-protocol-c3-10:before {
+        content: '\e927'
+    }
+
+    .iconm-protocol-c2-1:before {
+        content: '\e900'
+    }
+
+    .iconm-protocol-c2-2:before {
+        content: '\e901'
+    }
+
+    .iconm-protocol-c2-3:before {
+        content: '\e928'
+    }
+
+    .iconm-protocol-c2-4:before {
+        content: '\e929'
+    }
+
+    .iconm-protocol-c2-5:before {
+        content: '\e92a'
+    }
+
+    .iconm-protocol-c2-6:before {
+        content: '\e92b'
+    }
+
+    .iconm-protocol-c2-7:before {
+        content: '\e92c'
+    }
+
+    .iconm-protocol-c1-1:before {
+        content: '\e92d'
+    }
+
+    .iconm-protocol-c1-2:before {
+        content: '\e92e'
+    }
+
+    .iconm-protocol-c1-3:before {
+        content: '\e92f'
+    }
+
+    .iconm-protocol-c1-4:before {
+        content: '\e930'
+    }
+
+    .iconm-protocol-c1-5:before {
+        content: '\e931'
+    }
+
+    .iconm-protocol-c1-6:before {
+        content: '\e932'
+    }
+
+    .iconm-protocol-c1-7:before {
+        content: '\e933'
+    }
+
+    .iconm-protocol-c1-8:before {
+        content: '\e934'
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        text-decoration: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 16px;
+        font-size: 1rem;
+        font-family: 'Work Sans',sans-serif;
+        font-weight: 400;
+        color: #13264d;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility
+    }
+
+    input, select {
+        border-radius: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none
+    }
+
+        input focus, select focus {
+            outline: none
+        }
+
+    u {
+        text-decoration: underline
+    }
+
+    b {
+        font-weight: 600
+    }
+
+    i {
+        font-style: italic
+    }
+
+    a {
+        text-decoration: none;
+        color: #de2b5a
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: #de2b5a
+        }
+
+        a:focus {
+            text-decoration: none
+        }
+
+        a:active {
+            text-decoration: none
+        }
+
+        a.btnBox {
+            display: table;
+            outline: none;
+            margin: 0px auto 0px;
+            position: relative;
+            overflow: hidden;
+            cursor: pointer
+        }
+
+            a.btnBox p {
+                border: 2px solid #f42f63;
+                padding: 12px 25px;
+                text-align: center;
+                -webkit-transition: all 0.3s ease 0.2s;
+                -moz-transition: all 0.3s ease 0.2s;
+                -o-transition: all 0.3s ease 0.2s;
+                -ms-transition: all 0.3s ease 0.2s;
+                transition: all 0.3s ease 0.2s;
+                position: relative;
+                z-index: 2
+            }
+
+                a.btnBox p:before {
+                    content: '';
+                    position: absolute;
+                    z-index: -1;
+                    width: 0;
+                    height: 100%;
+                    top: 0;
+                    left: 0%;
+                    -webkit-transition: all 0.5s ease 0.1s;
+                    -moz-transition: all 0.5s ease 0.1s;
+                    -o-transition: all 0.5s ease 0.1s;
+                    -ms-transition: all 0.5s ease 0.1s;
+                    transition: all 0.5s ease 0.1s;
+                    -webkit-transform-origin: top left;
+                    -moz-transform-origin: top left;
+                    -o-transform-origin: top left;
+                    -ms-transform-origin: top left;
+                    transform-origin: top left
+                }
+
+            a.btnBox:hover {
+                text-decoration: none
+            }
+
+                a.btnBox:hover p {
+                    color: #fff
+                }
+
+                    a.btnBox:hover p:before {
+                        width: 110%;
+                        background-color: #f42f63
+                    }
+
+        a.btnBoxArrow {
+            height: 60px;
+            display: table;
+            outline: none;
+            margin: 0px auto 0px;
+            position: relative;
+            cursor: pointer;
+            background-color: #de2b5a;
+            overflow: hidden;
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s
+        }
+
+
+            a.btnBoxArrow .innerContentBtn {
+                padding: 18px 18px 18px 25px;
+                position: relative;
+                width: 100%;
+                height: 100%;
+                display: -webkit-box;
+                display: -moz-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: box;
+                display: flex;
+                -webkit-box-align: center;
+                -moz-box-align: center;
+                -o-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                -o-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center
+            }
+
+                a.btnBoxArrow .innerContentBtn:before {
+                    content: '';
+                    position: absolute;
+                    z-index: 1;
+                    width: 0;
+                    height: 110%;
+                    top: -2px;
+                    left: -2px;
+                    -webkit-transition: all 0.5s ease 0.1s;
+                    -moz-transition: all 0.5s ease 0.1s;
+                    -o-transition: all 0.5s ease 0.1s;
+                    -ms-transition: all 0.5s ease 0.1s;
+                    transition: all 0.5s ease 0.1s;
+                    -webkit-transform-origin: top left;
+                    -moz-transform-origin: top left;
+                    -o-transform-origin: top left;
+                    -ms-transform-origin: top left;
+                    transform-origin: top left
+                }
+
+                a.btnBoxArrow .innerContentBtn p {
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                    -ms-filter: none !important;
+                    filter: none !important;
+                    position: relative;
+                    text-align: center;
+                    color: #fff;
+                    font-weight: 500;
+                    -webkit-transition: all 0.3s ease 0.2s;
+                    -moz-transition: all 0.3s ease 0.2s;
+                    -o-transition: all 0.3s ease 0.2s;
+                    -ms-transition: all 0.3s ease 0.2s;
+                    transition: all 0.3s ease 0.2s;
+                    z-index: 2
+                }
+
+                    a.btnBoxArrow .innerContentBtn p b {
+                        color: #fff;
+                        -webkit-transition: all 0.3s ease 0.2s;
+                        -moz-transition: all 0.3s ease 0.2s;
+                        -o-transition: all 0.3s ease 0.2s;
+                        -ms-transition: all 0.3s ease 0.2s;
+                        transition: all 0.3s ease 0.2s;
+                        font-weight: 600
+                    }
+
+                a.btnBoxArrow .innerContentBtn .arrowContent {
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                    -ms-filter: none !important;
+                    filter: none !important;
+                    position: relative;
+                    z-index: 2;
+                    padding: 2px 0 0;
+                    margin-left: 15px;
+                    -webkit-transition: all 0.5s ease 0s;
+                    -moz-transition: all 0.5s ease 0s;
+                    -o-transition: all 0.5s ease 0s;
+                    -ms-transition: all 0.5s ease 0s;
+                    transition: all 0.5s ease 0s
+                }
+
+                    a.btnBoxArrow .innerContentBtn .arrowContent .innerArrowContent {
+                        overflow: hidden;
+                        width: 10px;
+                        -webkit-transition: all 0.5s ease 0s;
+                        -moz-transition: all 0.5s ease 0s;
+                        -o-transition: all 0.5s ease 0s;
+                        -ms-transition: all 0.5s ease 0s;
+                        transition: all 0.5s ease 0s
+                    }
+
+                        a.btnBoxArrow .innerContentBtn .arrowContent .innerArrowContent svg.arrow {
+                            width: 18px;
+                            float: right;
+                            -webkit-transition: all 0.3s ease 0.2s;
+                            -moz-transition: all 0.3s ease 0.2s;
+                            -o-transition: all 0.3s ease 0.2s;
+                            -ms-transition: all 0.3s ease 0.2s;
+                            transition: all 0.3s ease 0.2s;
+                            fill: #fff
+                        }
+
+                            a.btnBoxArrow .innerContentBtn .arrowContent .innerArrowContent svg.arrow .body {
+                                -webkit-transition: all 0.3s ease 0s;
+                                -moz-transition: all 0.3s ease 0s;
+                                -o-transition: all 0.3s ease 0s;
+                                -ms-transition: all 0.3s ease 0s;
+                                transition: all 0.3s ease 0s;
+                                opacity: 0;
+                                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                                filter: alpha(opacity=0)
+                            }
+
+            a.btnBoxArrow:hover {
+                background-color: #b71d45
+            }
+
+                a.btnBoxArrow:hover .innerContentBtn p, a.btnBoxArrow:hover .innerContentBtn span {
+                    color: #fff
+                }
+
+                a.btnBoxArrow:hover .innerContentBtn .arrowContent .innerArrowContent {
+                    width: 18px
+                }
+
+                    a.btnBoxArrow:hover .innerContentBtn .arrowContent .innerArrowContent svg.arrow {
+                        fill: #fff
+                    }
+
+                        a.btnBoxArrow:hover .innerContentBtn .arrowContent .innerArrowContent svg.arrow .body {
+                            fill: #fff;
+                            opacity: 1;
+                            -ms-filter: none;
+                            filter: none
+                        }
+
+    html {
+        overflow-y: auto !important
+    }
+
+</style>
+<body>
+    <!-- BLACK-->
+    <div class="blackbox blackboxLoader" style="display: none;"><i class="iconm-loader"></i></div>
+    <div class="blackbox blackboxBrowser fullBlack" style="display: none;">
+        <div class="popupModal col-12 col-sm-11 col-lg-7 col-xl-6">
+            <div class="innerPopupModal">
+                <h2>
+                    Su Navegador no es compatible
+                </h2>
+                <p class="browserExperience">
+                    Para una mejor experiencia use una de estas otras opciones
+
+                </p>
+                <ul class="browserList">
+                    <li>
+                        <!--RUTA --><img src="images/icon-safari.jpg">
+                    </li>
+                    <li>
+                        <!--RUTA --><img src="images/icon-chrome.jpg">
+                    </li>
+                    <li>
+                        <!--RUTA --><img src="images/icon-firefox.jpg">
+                    </li>
+                    <li>
+                        <!--RUTA --><img src="images/icon-ie-edge.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER-->
+    <header class="col-12 col-sm-12">
+        <ul class="topHeader">
+            <li class="col-12 col-sm-9 col-lg-8">
+                <p><b tabindex="0"><i class="fas fa-phone-alt" aria-hidden="true"></i> Linea de Atención para celular 192 </b><span> | </span><a href="lineas-de-atencion.html">Ver todas las lineas de atención</a></p>
+            </li>
+            <li class="contentTopRedes col-sm-3 col-lg-4">
+                <ul class="redes">
+                    <li class="botWhatsApp"><a href="https://api.whatsapp.com/send?phone=573153330000&amp;text=Datos%20adicionales%20del%20Covid-19%20en%20Colombia,%20dando%20clic%20en%20enviar%20&amp;source=&amp;data=&amp;autoload=false" target="_blank" title="Chat de asistencia COVID-19"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/MinSaludCol" target="_blank" title="Facebook Ministerio de Salud"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/MinSaludCol" target="_blank" title="Twitter Ministerio de Salud"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/MinSaludColPrensa" target="_blank" title="Youtube Ministerio de Salud"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/minsaludcol/" target="_blank" title="Instagram Ministerio de Salud"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="headerContent">
+            <div id="contentMobile">
+                <figure class="logo"><a href="index.html" tabindex="0"><img src="images/govco-bn.png" alt="Gov.co"></a></figure>
+                <div class="mainContBtns">
+                    <div id="btnMenuMobile" style="display: none;" title="Botón Menú" tabindex="0" class="">
+                        <ul>
+                            <li class="top"></li>
+                            <li class="middle"></li>
+                            <li class="bottom"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <nav id="contentMenu" class="menuMobileActive" style="visibility: hidden; opacity: 0; height: 0px;">
+                <ul class="menu">
+                    <li class="firstLvl statusIn" databodyclass="home">
+                        <a href="index.html">
+                            <p>Inicio</p>
+                        </a>
+                    </li>
+                    <li class="firstLvl highLightMenu" databodyclass="auto-diagnostico" style="pointer-events: inherit;">
+                        <a href="auto-diagnostico.html">
+                            <p>Autodiagnóstico</p>
+                        </a>
+                    </li>
+                    <li class="firstLvl dropdownMenu" style="pointer-events: inherit;">
+                        <a class="btnSubMenu">
+                            <p>Acciones del Gobierno</p>
+                        </a>
+                        <ul class="subMenu" style="visibility: hidden; opacity: 0; height: 0px; transform: matrix(1, 0, 0, 1, -150, -5);">
+                            <li databodyclass="acciones" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="acciones-del-gobierno.html">
+                                    <p>Acciones tomadas</p>
+                                </a>
+                            </li>
+                            <li databodyclass="colombia-sigue-adelante" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="http://colombiasigueadelante.mincit.gov.co/" target="_blank">
+                                    <p>Colombia sigue adelante</p>
+                                </a>
+                            </li>
+                            <li databodyclass="alocuciones" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="alocuciones-declaraciones.html">
+                                    <p>Alocuciones y Declaraciones</p>
+                                </a>
+                            </li>
+                            <li databodyclass="decretos" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="decretos.html">
+                                    <p>Decretos</p>
+                                </a>
+                            </li>
+                            <li databodyclass="protocolo" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="protocolos.html">
+                                    <p>Protocolos</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstLvl dropdownMenu" style="pointer-events: inherit;">
+                        <a class="btnSubMenu">
+                            <p>Mitos y Preguntas</p>
+                        </a>
+                        <ul class="subMenu" style="visibility: hidden; opacity: 0; height: 0px; transform: matrix(1, 0, 0, 1, -150, -5);">
+                            <li databodyclass="preguntas" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="preguntas-frecuentes.html">
+                                    <p>Preguntas frecuentes</p>
+                                </a>
+                            </li>
+                            <li databodyclass="mitos-realidades" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="mitos-realidades.html">
+                                    <p>Mitos y Realidades</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstLvl dropdownMenu" style="pointer-events: inherit;">
+                        <a class="btnSubMenu">
+                            <p>Enlaces de Interés</p>
+                        </a>
+                        <ul class="subMenu" style="visibility: hidden; opacity: 0; height: 0px; transform: matrix(1, 0, 0, 1, -150, -5);">
+                            <li databodyclass="ayudar-nos-hace-bien" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="ayudar-nos-hace-bien.html">
+                                    <p>Ayudar nos hace bien</p>
+                                </a>
+                            </li>
+                            <li databodyclass="ayuda-discapacitados" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="tic-personas-con-discapacidad.html">
+                                    <p>TIC y discapacidad</p>
+                                </a>
+                            </li>
+                            <li databodyclass="aislamiento" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="aislamiento-saludable.html">
+                                    <p>Aislamiento Saludable</p>
+                                </a>
+                            </li>
+                            <li databodyclass="cadena-de-abastecimiento" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="http://ayudarnoshacebien.org/" target="_blank">
+                                    <p>Cadena de abastecimiento</p>
+                                </a>
+                            </li>
+                            <li databodyclass="enlaces-interes" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="enlaces-interes.html">
+                                    <p>Información de interés - COVID-19</p>
+                                </a>
+                            </li>
+                            <li databodyclass="comportamiento-covid-19" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="estadisticas-covid-19/comportamiento-covid-19.html">
+                                    <p>Estadisticas COVID-19</p>
+                                </a>
+                            </li>
+                            <li databodyclass="centro-documental" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="centro-documental.html">
+                                    <p>Centro Documental</p>
+                                </a>
+                            </li>
+                            <li databodyclass="noticias-falsas" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="noticias-falsas.html">
+                                    <p>Noticias Falsas</p>
+                                </a>
+                            </li>
+                            <li databodyclass="boletin-diario" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="boletin-diario.html">
+                                    <p>Boletín diario - Noticias Falsas</p>
+                                </a>
+                            </li>
+                            <li databodyclass="datos-cuarentena" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="datos-cuarentena.html">
+                                    <p>Aislamiento Preventivo</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstLvl dropdownMenu" style="pointer-events: inherit;">
+                        <a class="btnSubMenu">
+                            <p>Lineas de Atención</p>
+                        </a>
+                        <ul class="subMenu" style="visibility: hidden; opacity: 0; height: 0px; transform: matrix(1, 0, 0, 1, -150, -5);">
+                            <li databodyclass="telefonos-covid" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="lineas-de-atencion.html">
+                                    <p>COVID-19</p>
+                                </a>
+                            </li>
+                            <li databodyclass="telefonos-eps" databodyclassparent="subMenu" style="pointer-events: inherit;">
+                                <a href="lineas-de-atencion-eps.html">
+                                    <p>EPS</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="firstLvl highLightMenu" databodyclass="denuncia-virtual" style="pointer-events: inherit;">
+                        <a href="https://adenunciar.policia.gov.co/Adenunciar/Login.aspx?ReturnUrl=%2fadenunciar%2fdefault.aspx" target="_blank">
+                            <p>Denuncia Virtual</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="row" id="mainContent" style="height: inherit; min-height: inherit; pointer-events: inherit;">
+        <div class="col-12 col-sm-12 home" id="mainContainer" dataclass="home" style="height: inherit; min-height: inherit;">
+            <section class="bannerIntro col-12 col-sm-12">
+                <!-- BANNERS PRINCIPAL-->
+                <figure class="mainbanner"><a class="ancor" href="#covidInfo" title="¿Cómo sé si tengo coronavirus?"><img class="imageDesk" src="images/coronavirusDesk-2.jpg" alt="¿Cómo sé si tengo coronavirus?" title="¿Cómo sé si tengo coronavirus? Linea de Atención celular 192"><img class="imageTablet" src="images/coronavirusTablet.jpg" alt="¿Cómo sé si tengo coronavirus?" title="¿Cómo sé si tengo coronavirus? Linea de Atención celular 192"><img class="imageMobile" src="images/coronavirusMobile.jpg" alt="¿Cómo sé si tengo coronavirus?" title="¿Cómo sé si tengo coronavirus? Linea de Atención celular 192"></a></figure>
+                <div class="innerBannerIntro innerWrapper">
+                    <!-- BANNERS SECUNDARIOS-->
+                    <div class="containerSubBanner">
+                        <div class="swiper-container sliderSubBanner swiper-container-initialized swiper-container-horizontal">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-d10677d33f6108d103" aria-live="off" style="transition: all 0ms ease 0s; transform: translate3d(-819px, 0px, 0px);">
+                                <li class="swiper-slide" role="group" aria-label="1 / 4" style="width: 389.5px; margin-right: 20px;"><a href="ayudar-nos-hace-bien.html" title="Súmate a esta donación por los que lo necesitan. Ayudar nos hace bien"><img src="images/subBannerAyudar.jpg" alt="Súmate a esta donación por los que lo necesitan" title="Súmate a esta donación por los que lo necesitan"></a></li>
+                                <li class="swiper-slide swiper-slide-prev" role="group" aria-label="2 / 4" style="width: 389.5px; margin-right: 20px;"><a href="https://contenidos.colombiaaprende.edu.co/" target="_blank" title="Por ellos viajamos al futuro. Aprender Digital"><img src="images/subBannerEducacion.jpg" alt="Por ellos viajamos al futuro" title="Por ellos viajamos al futuro"></a></li>
+                                <li class="swiper-slide swiper-slide-active" role="group" aria-label="3 / 4" style="width: 389.5px; margin-right: 20px;"><a href="estadisticas-covid-19/mapa-vulnerabilidad.html" title="Conoce en detalle los números del Coronavirus en tu región"><img src="images/subBannerMapa.png" alt="Conoce en detalle los números del Coronavirus en tu región"></a></li>
+                                <li class="swiper-slide swiper-slide-next" role="group" aria-label="4 / 4" style="width: 389.5px; margin-right: 20px;"><a href="https://innpulsacolombia.com/ColombiaEmprendeInnova/" target="_blank" title="Economías alternativas en tiempos del Coronavirus. Colombia Emprende e Innova"><img src="images/subBannerInnpulsa.jpg" alt="Economías alternativas en tiempos del Coronavirus" title="Economías alternativas en tiempos del Coronavirus"></a></li>
+                            </ul>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <!-- ADD PAGINATION-->
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 90px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev" tabindex="0" role="button" aria-label="Go to slide 1" style="left: -18px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" tabindex="0" role="button" aria-label="Go to slide 2" style="left: -18px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" tabindex="0" role="button" aria-label="Go to slide 3" style="left: -18px;"></span></div>
+                        <!-- ADD ARROWS-->
+                        <div class="container-swiper-button">
+                            <div class="swiper-button-next swiper-button-disabled" tabindex="-1" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-d10677d33f6108d103" aria-disabled="true"></div>
+                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-d10677d33f6108d103" aria-disabled="false"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accesoAislamiento col-12 col-sm-12">
+                <div class="innerAccesoAislamiento innerWrapper">
+                    <div class="titleCont">
+                        <h2>
+                            Un aislamiento saludable
+
+                        </h2>
+                    </div>
+                    <!-- SLIDER CAROUSEL-->
+                    <div class="containerCarouselAislamiento">
+                        <div class="swiper-container sliderAislamiento swiper-container-initialized swiper-container-horizontal">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-6613f43582d279310" aria-live="polite">
+                                <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-virus"></i> <span>CoronApp</span></h4>
+                                            <p>La prevención es tarea de todos, por eso hemos lanzado una aplicación en la que tú nos puedes ayudar a controlar esta situación. ¡Juntos podemos combatir el virus!</p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/coronapp.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-health-mind"></i> <span>Salud mental</span></h4>
+                                            <p>Estamos en casa para cuidar de nuestra salud física, pero también es importante cuidar de nuestra mente y nuestras emociones. Es normal que te sientas diferente en estos días, por eso tenemos herramientas para ayudarte. </p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/salud-mental.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="3 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-adults"></i> <span>Adulto Mayor</span></h4>
+                                            <p>Si eres un adulto mayor de 70, o tienes familiares que lo sean, es importante que sigas las recomendaciones que han hecho los expertos para llevar un Aislamiento Preventivo saludable.</p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/adulto-mayor.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="4 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-excersise"></i> <span>Estado físico</span></h4>
+                                            <p>Estar en casa no significa que vamos a estar sentados todo el día. Mientras te cuidas del coronavirus, también cuida de tu cuerpo con ejercicios caseros.</p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/estado-fisico-deporte.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="5 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-pet"></i> <span>Cuidado animal</span></h4>
+                                            <p>Tus mascotas no están en riesgo de contagio, pero es importante que cuides de ellas con precauciones adicionales durante el periodo de emergencia.</p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/cuidado-animal.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="6 / 6" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAislamiento">
+                                        <div class="textContent">
+                                            <h4><i class="iconm-house"></i> <span>Hogar</span></h4>
+                                            <p>Seguramente ya estás al tanto de como cuidar tu hogar frente al COVID-19, sin embargo, nunca sobra repasar las normas para garantizar que tu hogar esté lo más seguro posible.</p>
+                                        </div><a class="btnBoxArrow" href="aislamiento-saludable/hogar.html">
+                                            <div class="innerContentBtn">
+                                                <p>Saber Más</p>
+                                                <div class="arrowContent">
+                                                    <div class="innerArrowContent">
+                                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                                            <g>
+                                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <!-- ADD PAGINATION-->
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 90px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" tabindex="0" role="button" aria-label="Go to slide 1" style="left: 18px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" tabindex="0" role="button" aria-label="Go to slide 2" style="left: 18px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" tabindex="0" role="button" aria-label="Go to slide 3" style="left: 18px;"></span></div>
+                        <!-- ADD ARROWS-->
+                        <div class="container-swiper-button">
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-6613f43582d279310" aria-disabled="false"></div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-6613f43582d279310" aria-disabled="true"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="statsMap col-12 col-sm-12">
+                <div class="innerStatsMap innerWrapper">
+                    <ul class="contentMenuCovidStats col-12 col-sm-12">
+                        <li class="active" datapreview="statsCovid1">
+                            <p>Panorama general</p>
+                        </li>
+                        <li datapreview="statsCovid2">
+                            <p>Casos</p>
+                        </li>
+                        <li datapreview="statsCovid3">
+                            <p>​​Departamentos</p>
+                        </li>
+                        <li datapreview="statsCovid4">
+                            <p>Municipios</p>
+                        </li>
+                        <li datapreview="statsCovid5">
+                            <p>Muestras</p>
+                        </li>
+                        <li datapreview="statsCovid6">
+                            <p>Fe de erratas</p>
+                        </li>
+                        <li datapreview="statsCovid6">
+                            <p>Poblaciones</p>
+                        </li>
+                    </ul>
+                    <ul class="viewCovidStats col-12 col-sm-12">
+                        <li class="statsCovid1 active">
+                            <div class="innerTema">
+                                <script id="infogram_0_947b09e2-e784-43ee-a618-95266cab42bf" title="Panorama General" src="https://e.infogram.com/js/dist/embed.js?brS" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" style="border: none; width: 843px; height: 4224px;" src="https://e.infogram.com/947b09e2-e784-43ee-a618-95266cab42bf?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Panorama General"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid2">
+                            <div class="innerTema">
+                                <script id="infogram_0_844c3769-b33b-48c1-b116-864e41eb6690" title="Casos" src="https://e.infogram.com/js/dist/embed.js?7YD" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" src="https://e.infogram.com/844c3769-b33b-48c1-b116-864e41eb6690?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Casos" style="border: none; width: 0px; height: 130px;"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid3">
+                            <div class="innerTema">
+                                <script id="infogram_0_6d19bb1e-6f96-436d-83a2-a09749dda5a4" title="Departamentos" src="https://e.infogram.com/js/dist/embed.js?SxN" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" style="border: none; width: 0px; height: 130px;" src="https://e.infogram.com/6d19bb1e-6f96-436d-83a2-a09749dda5a4?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Departamentos"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid4">
+                            <div class="innerTema">
+                                <script id="infogram_0_ad90029c-632b-4ada-9240-814e48540a36" title="Municipios" src="https://e.infogram.com/js/dist/embed.js?T70" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" style="border: none; width: 0px; height: 130px;" src="https://e.infogram.com/ad90029c-632b-4ada-9240-814e48540a36?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Municipios"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid5">
+                            <div class="innerTema">
+                                <script id="infogram_0_50cedb63-0583-4562-bf30-396c2fd44609" title="Muestras" src="https://e.infogram.com/js/dist/embed.js?zL6" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" style="border: none; width: 0px; height: 130px;" src="https://e.infogram.com/50cedb63-0583-4562-bf30-396c2fd44609?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Muestras"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid6">
+                            <div class="innerTema">
+                                <script id="infogram_0_492ad9ac-e5f1-4b6e-b7f7-710bed4084b7" title="Fe de erratas" src="https://e.infogram.com/js/dist/embed.js?ZeF" type="text/javascript"></script><iframe scrolling="no" frameborder="0" allowfullscreen="" style="border: none; width: 0px; height: 130px;" src="https://e.infogram.com/492ad9ac-e5f1-4b6e-b7f7-710bed4084b7?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" title="Fe de erratas"></iframe>
+                            </div>
+                        </li>
+                        <li class="statsCovid6">
+                            <div class="innerTema">
+                                <div class="infogram-embed" data-id="c23c5468-7da0-4ef6-b3eb-c38abd973614" data-type="interactive" data-title="Poblaciones" data-processed="1" id="ig-3e013a5c-c39c-f994-8712-5504ae54e56b"><iframe src="https://e.infogram.com/c23c5468-7da0-4ef6-b3eb-c38abd973614?parent_url=https%3A%2F%2Fcoronaviruscolombia.gov.co%2FCovid19%2Findex.html&amp;src=embed#async_embed" scrolling="no" frameborder="0" allowfullscreen="" title="Poblaciones" style="border: none; width: 0px; height: 130px;"></iframe></div>
+                                <script>
+                    !function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");
+
+                                </script>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="interesAislamiento bannerTitle bannerImpulsa col-12 col-sm-12">
+                <div class="innerInteresAislamiento">
+                    <h3>¿Tienes alguna denuncia?</h3>
+                    <p>Hazla aquí, fácil y rápido.</p>
+                    <div class="contentBtns">
+                        <a class="btnBoxArrow" href="https://adenunciar.policia.gov.co/Adenunciar/Login.aspx?ReturnUrl=%2fadenunciar%2fdefault.aspx" target="_blank">
+                            <div class="innerContentBtn">
+                                <p>Denuncia Aquí</p>
+                                <div class="arrowContent">
+                                    <div class="innerArrowContent">
+                                        <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                            <g>
+                                                <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                                <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="topActions col-12 col-sm-12">
+                <div class="innerTopActions innerWrapper">
+                    <div class="titleCont">
+                        <h1>
+                            Conoce las medidas y protocolos del gobierno nacional
+
+                        </h1>
+                    </div>
+                    <!-- SLIDER CAROUSEL-->
+                    <div class="containerCarousel">
+                        <div class="swiper-container sliderAcciones swiper-container-initialized swiper-container-horizontal">
+                            <ul class="swiper-wrapper" id="swiper-wrapper-35a2d61dbcae7f4a" aria-live="polite">
+                                <li class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno extiende giros extraordinarios de Familias en Acción, Jóvenes en Acción y Adulto Mayor hasta diciembre de 2020 - 30 septiembre</h4><a href="acciones/acciones-de-economia.html" title="Gobierno extiende giros extraordinarios de Familias en Acción, Jóvenes en Acción y Adulto Mayor hasta diciembre de 2020 - 30 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Ampliación de la fase de Aislamiento Selectivo - 28 septiembre</h4><a href="acciones/acciones-de-aislamiento-selectivo.html" title="Ampliación de la fase de Aislamiento Selectivo - 28 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="3 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno propone ante el Congreso ampliar vigencia y beneficios del Fondo de Solidaridad para la educación hasta junio de 2021 - 23 septiembre</h4><a href="acciones/acciones-de-educacion.html" title="Gobierno propone ante el Congreso ampliar vigencia y beneficios del Fondo de Solidaridad para la educación hasta junio de 2021 - 23 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="4 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Más recursos para el apoyo a la implementación de protocolos de Bioseguridad - 21 septiembre</h4><a href="acciones/acciones-de-economia.html" title="Más recursos para el apoyo a la implementación de protocolos de Bioseguridad - 21 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="5 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Empezó primera fase de reactivación de vuelos internacionales - 21 septiembre</h4><a href="acciones/acciones-de-turismo.html" title="Empezó primera fase de reactivación de vuelos internacionales - 21 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="6 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Viajeros al exterior deberán hacerse prueba de covid-19 - 17 septiembre</h4><a href="acciones/acciones-de-turismo.html" title="Viajeros al exterior deberán hacerse prueba de covid-19 - 17 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="7 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Colombia ingresa a Covax, coalición mundial de países para garantizar adquisición de vacunas contra covid-19 - 16 septiembre</h4><a href="acciones/acciones-de-salud.html" title="Colombia ingresa a Covax, coalición mundial de países para garantizar adquisición de vacunas contra covid-19 - 16 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="8 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno anunció programa de garantías, hasta del 70%, para créditos de vivienda VIS y No VIS - 15 septiembre</h4><a href="acciones/acciones-de-vivienda.html" title="Gobierno anunció programa de garantías, hasta del 70%, para créditos de vivienda VIS y No VIS - 15 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="9 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Extensión de  líneas de crédito con respaldo del Fondo Nacional de Garantías hasta junio de 2021 - 15 septiembre</h4><a href="acciones/acciones-de-economia.html" title="Extensión de  líneas de crédito con respaldo del Fondo Nacional de Garantías hasta junio de 2021 - 15 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="10 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno propondrá al Congreso ampliar el Programa de Apoyo al Empleo Formal hasta marzo del año entrante - 15 septiembre</h4><a href="acciones/acciones-de-empleo.html" title="Gobierno propondrá al Congreso ampliar el Programa de Apoyo al Empleo Formal hasta marzo del año entrante - 15 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="11 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno Nacional reactivará de manera gradual la operación de vuelos internacionales a partir del próximo 21 de septiembre - 15 septiembre</h4><a href="acciones/acciones-de-turismo.html" title="El Gobierno Nacional reactivará de manera gradual la operación de vuelos internacionales a partir del próximo 21 de septiembre - 15 septiembre">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="12 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Se expidió el Decreto 1168 de 2020 con los detalles de la nueva fase de Aislamiento Selectivo con Distanciamiento Individual Responsable - 25 agosto</h4><a href="acciones/acciones-de-aislamiento-selectivo.html" title="Se expidió el Decreto 1168 de 2020 con los detalles de la nueva fase de Aislamiento Selectivo con Distanciamiento Individual Responsable - 25 agosto">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="13 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Ampliación de la emergencia sanitaria - 25 agosto</h4><a href="acciones/acciones-de-aislamiento-selectivo.html" title="Saber mas sobre, Ampliación de la emergencia sanitaria - 25 agosto">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="14 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Nueva fase: Aislamiento Selectivo - 24 agosto</h4><a href="acciones/acciones-de-aislamiento-selectivo.html" title="Saber mas sobre, Nueva fase: Aislamiento Selectivo - 24 agosto">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="15 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Se mantiene el aislamiento preventivo obligatorio hasta el 30 de agosto, con las siguientes características - 28 julio</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Se mantiene el aislamiento preventivo obligatorio hasta el 30 de agosto, con las siguientes características - 28 julio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="16 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Aislamiento Preventivo Obligatorio en Colombia se extiende hasta el primero de agosto - 07 julio</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, El Aislamiento Preventivo Obligatorio en Colombia se extiende hasta el primero de agosto - 07 julio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="17 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>En agosto arranca nuevo programa de Acompañamiento a Deudores - 02 julio</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, En agosto arranca nuevo programa de Acompañamiento a Deudores - 02 julio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="18 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno Nacional dio a conocer el Protocolo de Bioseguridad para la operación de vuelos domésticos - 01 julio</h4><a href="acciones/acciones-de-turismo.html" title="Saber mas sobre, El Gobierno Nacional dio a conocer el Protocolo de Bioseguridad para la operación de vuelos domésticos - 01 julio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="19 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Seguro de vida para para trabajadores de la salud - 24 junio</h4><a href="acciones/acciones-de-salud.html" title="Saber mas sobre, Seguro de vida para para trabajadores de la salud - 24 junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="20 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Ingreso Solidario se extenderá hasta diciembre - 24 junio</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, El Ingreso Solidario se extenderá hasta diciembre - 24 junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="21 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Ampliación aislamiento preventivo obligatorio hasta el 15 de julio - 23 junio</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Ampliación aislamiento preventivo obligatorio hasta el 15 de julio - 23 junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="22 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Decreto 847 de 2020 - 14 de junio</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Decreto 847 de 2020 - 14 de junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="23 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Nuevas medidas para proteger los derechos de los trabajadores colombianos - 4 de junio</h4><a href="acciones/acciones-de-empleo.html" title="Saber mas sobre, Nuevas medidas para proteger los derechos de los trabajadores colombianos - 4 de junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="24 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Trabajo en Casa - 4 de junio</h4><a href="acciones/acciones-de-empleo.html" title="Saber mas sobre, Trabajo en Casa - 4 de junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="25 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Protocolos para la alternancia de la educación a partir de agosto - 3 de junio</h4><a href="acciones/acciones-de-educacion.html" title="Saber mas sobre, Protocolos para la alternancia de la educación a partir de agosto - 3 de junio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="26 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>¿Qué pasará desde el primero de junio? - 28 de mayo</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, ¿Qué pasará desde el primero de junio? - 28 de mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="27 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Beneficio adicional prima de junio - 28 de mayo</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, Beneficio adicional prima de junio - 28 de mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="28 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Nuevas medidas a partir del primero de junio - 27 mayo</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, las nuevas medidas a partir del primero de junio - 27 mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="29 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Pago de prima Junio - 27 mayo</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, el pago de prima Junio - 27 mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="30 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Nuevos beneficiarios de ingreso Solidario - 27 mayo</h4><a href="acciones/acciones-de-ayuda-social.html" title="Saber mas sobre, los nuevos beneficiarios de ingreso Solidario - 27 mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="31 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>3 días Sin IVA - 18 de mayo</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, los 3 días Sin IVA - 13 de mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="32 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno anunció alivios para la Educación - 13 de mayo</h4><a href="acciones/acciones-de-educacion.html" title="Saber mas sobre, Gobierno anunció alivios para la Educación - 13 de mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="33 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El país aumenta su capacidad de realizar pruebas en todo el territorio - 11 de Mayo</h4><a href="acciones/acciones-de-salud.html" title="Saber mas sobre, El país aumenta su capacidad de realizar pruebas en todo el territorio - 11 de Mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="34 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Nueva Emergencia Económica - 6 mayo</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, Nueva Emergencia Económica - 6 mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="35 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Extensión del aislamiento preventivo obligatorio desde el 11 hasta el 25 de mayo</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Extensión del aislamiento preventivo obligatorio desde el 11 hasta el 25 de mayo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="36 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Reactivación progresiva y responsable de algunos sectores de la economía</h4><a href="acciones/acciones-de-economia.html" title="Saber mas sobre, Reactivación progresiva y responsable de algunos sectores de la economía">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="37 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Protocolos de bioseguridad para empresas</h4><a href="acciones/acciones-de-salud.html" title="Saber mas sobre, Protocolos de bioseguridad para empresas">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="38 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>¿Que va a pasar después del 27 de abril?</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, ¿Que va a pasar después del 27 de abril?">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="39 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno lanzó nuevas medidas de alivio económico para el pago de los servicios públicos</h4><a href="acciones/acciones-de-servicios-publicos.html" title="Saber mas sobre, Gobierno lanzó nuevas medidas de alivio económico para el pago de los servicios públicos">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="40 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno expidió Decreto a través del cual, el Fondo Nacional de Garantías respaldará el acceso a créditos de Mipymes y trabajadores independientes</h4><a href="acciones/acciones-de-pymes.html" title="Saber mas sobre, Gobierno expidió Decreto a través del cual, el Fondo Nacional de Garantías respaldará el acceso a créditos de Mipymes y trabajadores independientes">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="41 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno amplía compra de elementos de protección para el personal de salud</h4><a href="acciones/acciones-de-salud.html" title="Saber mas sobre, Gobierno amplía compra de elementos de protección para el personal de salud">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="42 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno anunció las siguientes medidas socioeconómicas, que serán reglamentadas en los próximos días, para preservar el empleo en el país</h4><a href="acciones/acciones-de-empleo.html" title="Saber mas sobre, El Gobierno anunció las siguientes medidas socioeconómicas, que serán reglamentadas en los próximos días, para preservar el empleo en el país">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="43 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El aislamiento preventivo obligatorio se extiende hasta el 26 de abril</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, El aislamiento preventivo obligatorio se extiende hasta el 26 de abril">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="44 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Línea de crédito para apoyar sectores afectados por el COVID-19</h4><a href="acciones/acciones-de-pymes.html" title="Saber mas sobre, Línea de crédito para apoyar sectores afectados por el COVID-19">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="45 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>ARL públicas aportarán recursos para afrontar emergencia por COVID–19</h4><a href="acciones/acciones-de-empleo.html" title="Saber mas sobre, ARL públicas aportarán recursos para afrontar emergencia por COVID–19">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="46 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno, a través del Ministerio de Vivienda, anunció las siguientes medidas para arrendatarios de vivienda y micro, pequeñas y medianas empresas</h4><a href="acciones/acciones-de-vivienda.html" title="Saber mas sobre, El Gobierno, a través del Ministerio de Vivienda, anunció las siguientes medidas para arrendatarios de vivienda y micro, pequeñas y medianas empresas">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="47 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Inició la devolución del IVA a los colombianos más vulnerables</h4><a href="acciones/acciones-de-ayuda-social.html" title="Saber mas sobre, Inició la devolución del IVA a los colombianos más vulnerables">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="48 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Llamado del presidente Iván Duque a no compartir información falsa</h4><a href="acciones/acciones-de-telecomunicaciones.html" title="Saber mas sobre, Llamado del presidente Iván Duque a no compartir información falsa">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="49 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Beneficios para productores del campo</h4><a href="acciones/acciones-de-agricultura.html" title="Saber mas sobre, Beneficios para productores del campo">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="50 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Gobierno destina recursos para protección de empleos</h4><a href="acciones/acciones-de-empleo.html" title="Saber mas sobre, Gobierno destina recursos para protección de empleos">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="51 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>En marzo los colombianos más vulnerables recibirán los siguientes beneficios</h4><a href="acciones/acciones-de-ayuda-social.html" title="Saber mas sobre, En marzo los colombianos más vulnerables recibirán los siguientes beneficios">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="52 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>El Gobierno expidió el Decreto 457 para el período de aislamiento preventivo obligatorio</h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, El Gobierno expidió el Decreto 457 para el período de aislamiento preventivo obligatorio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="53 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Detalles sobre el aislamiento preventivo obligatorio </h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Detalles sobre el aislamiento preventivo obligatorio">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="54 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Reconexión Gratuita del Servicio de agua</h4><a href="acciones/acciones-de-servicios-publicos.html" title="Saber mas sobre, Servicio de Agua">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                                <li class="swiper-slide" role="group" aria-label="55 / 55" style="width: 389.5px; margin-right: 20px;">
+                                    <div class="innerSlideAction">
+                                        <h4>Medida de Aislamiento Preventivo Obligatorio por razones sanitarias para adultos de 70 años en adelante </h4><a href="acciones/acciones-de-aislamiento-preventivo.html" title="Saber mas sobre, Medida de Aislamiento Preventivo Obligatorio por razones sanitarias para adultos de 70 años en adelante">Ver Más<i class="iconm-arrowX"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <!-- ADD PAGINATION-->
+                        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 90px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" tabindex="0" role="button" aria-label="Go to slide 1" style="left: 36px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" tabindex="0" role="button" aria-label="Go to slide 2" style="left: 36px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" tabindex="0" role="button" aria-label="Go to slide 3" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 9" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 10" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 11" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 12" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 13" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 14" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 15" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 16" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 17" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 18" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 19" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 20" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 21" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 22" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 23" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 24" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 25" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 26" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 27" style="left: 36px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 28" style="left: 36px;"></span></div>
+                        <!-- ADD ARROWS-->
+                        <div class="container-swiper-button">
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-35a2d61dbcae7f4a" aria-disabled="false"></div>
+                            <div class="swiper-button-prev swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-35a2d61dbcae7f4a" aria-disabled="true"></div>
+                        </div>
+                    </div><a class="btnBoxArrow" href="acciones-del-gobierno.html">
+                        <div class="innerContentBtn">
+                            <p>Ver todas las acciones</p>
+                            <div class="arrowContent">
+                                <div class="innerArrowContent">
+                                    <svg class="arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.19 17.79">
+                                        <g>
+                                            <path class="body" d="M22.14,9.79H.9A.89.89,0,0,1,0,8.9.91.91,0,0,1,.9,8H23.38a1.66,1.66,0,0,1,0,1.79Z"></path>
+                                            <path class="head" d="M24.93,8.26l-8-8a.9.9,0,0,0-1.27,1.27L23,8.9l-7.37,7.36a.9.9,0,0,0,1.27,1.27l8-8a.91.91,0,0,0,0-1.27Z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="covidInfo col-12 col-sm-12" id="covidInfo">
+                <div class="innerCovidInfo innerWrapper">
+                    <div class="aboutCovid">
+                        <div class="titleCont">
+                            <h2>¿Qué es el COVID-19?</h2>
+                            <p>
+                                Los coronavirus (CoV) son virus que surgen periódicamente en diferentes áreas del mundo y que causan Infección Respiratoria Aguda (IRA), es decir gripa, que pueden llegar a ser leve, moderada o grave.
+                                <br>
+                                <br>
+                                El nuevo Coronavirus (COVID-19) ha sido catalogado por la Organización Mundial de la Salud como una emergencia en salud pública de importancia internacional (ESPII). Se han identificado casos en todos los continentes y, el 6 de marzo se confirmó el primer caso en Colombia.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="infoContainer">
+                        <ul class="contentMenuCovidInfo col-12 col-sm-12">
+                            <li datapreview="temaCovi1">
+                                <p>¿Cómo se transmite y quiénes afecta?</p>
+                            </li>
+                            <li datapreview="temaCovi2">
+                                <p>¿Cuáles son los síntomas y cómo tratarlo?</p>
+                            </li>
+                            <li datapreview="temaCovi3">
+                                <p>​​¿Cómo prevenirlo?</p>
+                            </li>
+                            <li datapreview="temaCovi4">
+                                <p>Recomendaciones para viajeros</p>
+                            </li>
+                        </ul>
+                        <ul class="viewCovidInfo col-12 col-sm-12">
+                            <li class="temaCovi1">
+                                <div class="innerTema">
+                                    <figure class="col-12 col-sm-12 col-lg-5"><img src="images/1.jpg" alt=""></figure>
+                                    <div class="textContent col-12 col-sm-12 col-lg-7">
+                                        <h3>¿Cómo se transmite el COVID-19?</h3>
+                                        <p>La infección se produce cuando una persona enferma tose o estornuda y expulsa partículas del virus que entran en contacto con otras personas. Este mecanismo es similar entre todas las Infecciones Respiratorias Agudas (IRA).</p>
+                                        <h3>¿A quiénes afecta?</h3>
+                                        <p>Se conoce que cualquier persona puede infectarse, independientemente de su edad, pero hasta el momento se han registrado relativamente pocos casos de COVID-19 en niños. La enfermedad es mortal en raras ocasiones, y hasta ahora las víctimas mortales han sido personas de edad avanzada que ya padecían una enfermedad crónica como diabetes, asma o hipertensión.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="temaCovi2">
+                                <div class="innerTema">
+                                    <figure class="col-12 col-sm-12 col-lg-5"><img src="images/2.jpg" alt=""></figure>
+                                    <div class="textContent col-12 col-sm-12 col-lg-7">
+                                        <h3>¿Cuáles son los síntomas?</h3>
+                                        <p>En general, los síntomas principales de las infecciones por coronavirus pueden ser los siguientes. Dependerá del tipo de coronavirus y de la gravedad de la infección:</p>
+                                        <ul>
+                                            <li>
+                                                <p>Fiebre de difícil control, mayor a 37,5 por más de 3 días</p>
+                                            </li>
+                                            <li>
+                                                <p>Tos</p>
+                                            </li>
+                                            <li>
+                                                <p>Dificultad para respirar</p>
+                                            </li>
+                                            <li>
+                                                <p>Fatiga</p>
+                                            </li>
+                                            <li>
+                                                <p>Malestar general</p>
+                                            </li>
+                                            <li>
+                                                <p>Secreción y goteo nasal.</p>
+                                            </li>
+                                        </ul>
+                                        <h3>​​¿Cuál es el tratamiento?</h3>
+                                        <p>Actualmente no existe tratamiento específico ni vacuna comprobada para ningún coronavirus. El tratamiento es sintomático y en el caso de requerirlo, el manejo se realiza de acuerdo con la gravedad del paciente.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="temaCovi3">
+                                <div class="innerTema">
+                                    <figure class="col-12 col-sm-12 col-lg-5"><img src="images/3.jpg" alt=""></figure>
+                                    <div class="textContent col-12 col-sm-12 col-lg-7">
+                                        <h3>¿Cómo prevenirlo?</h3>
+                                        <p>La medida más efectiva para prevenir el COVID-19 es lavarse las manos correctamente, con agua y jabón. Hacerlo frecuentemente reduce hasta en 50% el riesgo de contraer coronavirus. De igual manera, se recomiendan otras medidas preventivas cotidianas para ayudar a prevenir la propagación de enfermedades respiratorias, como:</p>
+                                        <ul>
+                                            <li>
+                                                <p>Evita el contacto cercano con personas enfermas</p>
+                                            </li>
+                                            <li>
+                                                <p>Al estornudar, cúbrete con la parte interna del codo</p>
+                                            </li>
+                                            <li>
+                                                <p>Si tienes síntomas de resfriado, quédate en casa y usa tapabocas</p>
+                                            </li>
+                                            <li>
+                                                <p>Limpiar y desinfectar los objetos y las superficies que se tocan frecuentemente</p>
+                                            </li>
+                                            <li>
+                                                <p>Ventila tu casa</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="temaCovi4">
+                                <div class="innerTema">
+                                    <figure class="col-12 col-sm-12 col-lg-5"><img src="images/4.jpg" alt=""></figure>
+                                    <div class="textContent col-12 col-sm-12 col-lg-7">
+                                        <h3>Extranjeros no podrán ingresar al país </h3>
+                                        <p>
+                                            Desde el lunes 16 de marzo ningún extranjero puede ingresar al territorio colombiano como medida preventiva frente al Coronavirus.
+                                            <br>
+                                            <br>
+                                            Colombianos, residentes y miembros de misiones diplomáticas pueden ingresar al país, pero serán sometidos al aislamiento preventivo obligatorio.
+                                        </p>
+                                        <h3>Medida de aislamiento preventivo para pasajeros </h3>
+                                        <p>
+                                            El autoaislamiento es obligatorio para las personas que lleguen a partir del 11 de marzo de 2020 (Resolución 380 de 2020 del Ministerio de Salud). Esta norma implica el compromiso ciudadano en la contención de la propagación de Coronavirus.
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <!-- REDES SOCIALES-->
+    <div class="contentRedes fixedRedes" style="visibility: hidden; opacity: 0; display: none;">
+        <ul class="redes">
+            <li class="botWhatsApp"><a href="https://api.whatsapp.com/send?phone=573153330000&amp;text=Datos%20adicionales%20del%20Covid-19%20en%20Colombia,%20dando%20clic%20en%20enviar%20&amp;source=&amp;data=&amp;autoload=false" target="_blank" title="Chat de asistencia COVID-19"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.facebook.com/MinSaludCol" target="_blank" title="Facebook Ministerio de Salud"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/MinSaludCol" target="_blank" title="Twitter Ministerio de Salud"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/user/MinSaludColPrensa" target="_blank" title="Youtube Ministerio de Salud"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/minsaludcol/" target="_blank" title="Instagram Ministerio de Salud"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <!-- BTN SCROLL-->
+    <div class="btnScrolTop" style="display: none; visibility: hidden; opacity: 0;"><a class="ancor" href="#mainContent"><i class="iconm-arrowY"></i></a></div>
+    <!-- FOOTER-->
+    <footer>
+        <div class="contentFooter-renew innerWrapper">
+            <div class="socialMedia col-12 col-sm-12 col-lg-6">
+                <h5>Línea de orientación sobre el nuevo<br> CORONAVIRUS COVID-19:</h5>
+                <p class="extraInfo"><b>En Bogotá:</b> +57(1) 330 5041 | <b>Celular:</b> 192 | <b>Resto del país:</b> 018000955590</p>
+                <ul class="redes">
+                    <li class="botWhatsApp"><a href="https://api.whatsapp.com/send?phone=573153330000&amp;text=Datos%20adicionales%20del%20Covid-19%20en%20Colombia,%20dando%20clic%20en%20enviar%20&amp;source=&amp;data=&amp;autoload=false" target="_blank" title="Chat de asistencia COVID-19"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/MinSaludCol" target="_blank" title="Facebook Ministerio de Salud"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="https://twitter.com/MinSaludCol" target="_blank" title="Twitter Ministerio de Salud"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/MinSaludColPrensa" target="_blank" title="Youtube Ministerio de Salud"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.instagram.com/minsaludcol/" target="_blank" title="Instagram Ministerio de Salud"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="enlacesInteres col-12 col-sm-12 col-lg-6">
+                <h5>Enlace de interés</h5>
+                <ul>
+                    <li>
+                        <p><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></p>
+                    </li>
+                    <li>
+                        <p><a href="tic-personas-con-discapacidad.html">TIC y discapacidad</a></p>
+                    </li>
+                    <li>
+                        <p><a href="aislamiento-saludable.html">Aislamiento saludable</a></p>
+                    </li>
+                    <li>
+                        <p><a href="enlaces-interes.html">Información de interés - COVID- 19</a></p>
+                    </li>
+                    <li>
+                        <p><a href="noticias-falsas.html">Noticias falsas</a></p>
+                    </li>
+                    <li>
+                        <p><a href="datos-cuarentena.html">Datos sobre la cuarentena</a></p>
+                    </li>
+                    <li>
+                        <p><a href="lineas-de-atencion.html">Lineas de Atención COVID-19</a></p>
+                    </li>
+                    <li>
+                        <p><a href="protocolos.html">Protocolos</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyRight col-12 col-sm-12">
+            <p class="legal">
+                © Copyright 2020 – Todos los derechos reservados Gobierno de Colombia.
+                <br>
+                <a href="politica-de-privacidad.html">Política de Privacidad</a>
+
+
+            </p>
+        </div>
+    </footer>
+    <!-- SCRIPT-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="js/vendor/smooth-scroll.polyfills.min.js"></script>
+    <script src="js/mainCovid.js"></script>
+    <script>
+      FuncionalidadesGenerales.detectBrowser();
+      setTimeout(function () {
+        document.querySelector('.blackboxLoader').style.display = 'none';
+      }, 1000);
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/mainCovid-home.js"></script>
+    <script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+    <script>
+      //- GEOLOCALIZACION Y CHAT
+      var options = {
+        formatted_address: "permissionDenied"
+      };
+      function initMap() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+            console.log('Location found');
+            options.formatted_address = "Lat:" + pos.lat + ", Lng:" + pos.lng;
+            console.log(options.formatted_address);
+          }, function() {
+              console.log('Error');
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          console.log('Error');
+        }
+        loadAssistant();
+      }
+      initMap();
+      function preSendhandler(event) {
+        event.data.context.skills['main skill'].user_defined.location = options.formatted_address;
+      }
+      function loadAssistant() {
+        window.loadWatsonAssistantChat({
+          integrationID: "268dc9cf-d10b-4fb2-897b-a2486c8167ca", // The ID of this integration.
+          region: "us-south" // The region your integration is hosted in.
+        }).then(function(instance) {
+          instance.on({
+            type: "pre:send",
+            handler: preSendhandler
+          });
+          instance.render();
+        });
+      }
+    </script>
+    
+</body>
+</html>
